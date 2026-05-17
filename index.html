@@ -1,0 +1,1906 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO -->
+  <title>Orientação Pré-Entrega de Imóveis em Montes Claros | VIA+</title>
+  <meta name="description" content="A VIA+ orienta você antes da vistoria de saída do imóvel. Entenda o laudo, saiba o que fazer e entregue sem retrabalho. Montes Claros/MG e região.">
+  <meta name="keywords" content="orientação entrega imóvel, pré-vistoria imóvel, checklist entrega imóvel, preparação vistoria saída, Montes Claros imóvel, como interpretar laudo vistoria, entrega imóvel alugado">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://viamais.vercel.app/">
+
+  <!-- GEO Local -->
+  <meta name="geo.region" content="BR-MG">
+  <meta name="geo.placename" content="Montes Claros">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="VIA+ — Entrega Inteligente de Imóveis">
+  <meta property="og:description" content="Orientação técnica pré-entrega de imóveis. Entenda o laudo, prepare o imóvel e entregue sem dor de cabeça.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://viamais.vercel.app/">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Schema Markup JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "VIA+ Entrega Inteligente de Imóveis",
+    "description": "Orientação técnica e preparação inteligente para entrega de imóveis alugados em Montes Claros/MG.",
+    "url": "https://viamais.vercel.app",
+    "telephone": "+5538984079731",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Montes Claros",
+      "addressRegion": "MG",
+      "addressCountry": "BR"
+    },
+    "sameAs": ["https://instagram.com/via.mais.entregainteligente"]
+  }
+  </script>
+
+  <style>
+    /* =============================================
+       CSS VARIABLES — IDENTIDADE VIA+
+    ============================================= */
+    :root {
+      --verde: #0B5D5D;
+      --verde-escuro: #084848;
+      --verde-claro: #145A5A;
+      --verde-bg: #0d6b6b18;
+      --grafite: #2B2B2B;
+      --grafite-medio: #3a3a3a;
+      --cinza: #666666;
+      --cinza-claro: #999999;
+      --branco: #F2F2F2;
+      --branco-puro: #ffffff;
+      --fonte-titulo: 'Montserrat', sans-serif;
+      --fonte-corpo: 'Poppins', sans-serif;
+      --sombra: 0 4px 24px rgba(0,0,0,0.10);
+      --sombra-forte: 0 8px 40px rgba(0,0,0,0.16);
+      --raio: 12px;
+      --raio-grande: 20px;
+    }
+
+    /* =============================================
+       RESET + BASE
+    ============================================= */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: var(--fonte-corpo); color: var(--grafite); background: var(--branco-puro); overflow-x: hidden; }
+    img { max-width: 100%; height: auto; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* =============================================
+       TIPOGRAFIA GLOBAL
+    ============================================= */
+    h1, h2, h3, h4 { font-family: var(--fonte-titulo); font-weight: 700; line-height: 1.2; }
+    h1 { font-size: clamp(2rem, 5vw, 3.2rem); }
+    h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); }
+    h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
+    p { line-height: 1.7; font-size: clamp(0.95rem, 2vw, 1.05rem); }
+
+    /* =============================================
+       UTILITÁRIOS
+    ============================================= */
+    .container { max-width: 1160px; margin: 0 auto; padding: 0 20px; }
+    .section { padding: 80px 0; }
+    .section-tag {
+      display: inline-block;
+      font-family: var(--fonte-titulo);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--verde);
+      background: var(--verde-bg);
+      border: 1px solid rgba(11,93,93,0.2);
+      padding: 6px 14px;
+      border-radius: 100px;
+      margin-bottom: 16px;
+    }
+    .section-titulo { color: var(--grafite); margin-bottom: 16px; }
+    .section-subtitulo { color: var(--cinza); max-width: 600px; margin-bottom: 48px; }
+    .destaque-verde { color: var(--verde); }
+
+    /* =============================================
+       BOTÕES
+    ============================================= */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--fonte-titulo);
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 16px 28px;
+      border-radius: var(--raio);
+      cursor: pointer;
+      transition: all 0.25s ease;
+      border: none;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .btn-primary {
+      background: var(--verde);
+      color: #fff;
+    }
+    .btn-primary:hover { background: var(--verde-escuro); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(11,93,93,0.35); }
+    .btn-outline {
+      background: transparent;
+      color: var(--verde);
+      border: 2px solid var(--verde);
+    }
+    .btn-outline:hover { background: var(--verde); color: #fff; transform: translateY(-2px); }
+    .btn-branco {
+      background: #fff;
+      color: var(--verde);
+    }
+    .btn-branco:hover { background: var(--branco); transform: translateY(-2px); box-shadow: var(--sombra); }
+
+    /* =============================================
+       NAVBAR
+    ============================================= */
+    .navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(11,93,93,0.1);
+      transition: box-shadow 0.3s;
+    }
+    .navbar.scrolled { box-shadow: var(--sombra); }
+    .navbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+    }
+    .logo-wrap { display: flex; align-items: center; gap: 12px; }
+    .logo-wrap img { height: 40px; width: auto; }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    .nav-links a {
+      font-family: var(--fonte-titulo);
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--grafite-medio);
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--verde); }
+    .nav-cta { display: flex; align-items: center; gap: 12px; }
+    .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
+    .hamburger span {
+      display: block; width: 24px; height: 2px;
+      background: var(--grafite); border-radius: 2px;
+      transition: all 0.3s;
+      margin: 5px 0;
+    }
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 68px; left: 0; right: 0;
+      background: #fff;
+      border-bottom: 1px solid rgba(11,93,93,0.1);
+      padding: 20px;
+      z-index: 999;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      font-family: var(--fonte-titulo);
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--grafite);
+      padding: 12px 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    /* =============================================
+       HERO
+    ============================================= */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0a2e2e 0%, #0B5D5D 50%, #145A5A 100%);
+      display: flex;
+      align-items: center;
+      padding-top: 68px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -200px; right: -200px;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(255,255,255,0.04) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -100px; left: -100px;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+      padding: 80px 0;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: rgba(255,255,255,0.9);
+      font-family: var(--fonte-titulo);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 8px 16px;
+      border-radius: 100px;
+      margin-bottom: 28px;
+    }
+    .hero-badge span { width: 6px; height: 6px; background: #4ecca3; border-radius: 50%; display: inline-block; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.4)} }
+    .hero-titulo {
+      color: #fff;
+      margin-bottom: 20px;
+      font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+      line-height: 1.15;
+    }
+    .hero-titulo em { font-style: normal; color: #4ecca3; }
+    .hero-subtitulo {
+      color: rgba(255,255,255,0.78);
+      font-size: clamp(1rem, 2vw, 1.12rem);
+      margin-bottom: 36px;
+      max-width: 520px;
+    }
+    .hero-beneficios {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+    .hero-beneficio {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: rgba(255,255,255,0.88);
+      font-size: 0.95rem;
+    }
+    .hero-beneficio-icon {
+      width: 28px; height: 28px;
+      background: rgba(78,204,163,0.2);
+      border: 1px solid rgba(78,204,163,0.4);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      font-size: 0.8rem;
+    }
+    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+    .hero-visual {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .hero-card-flutuante {
+      background: rgba(255,255,255,0.07);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: var(--raio-grande);
+      padding: 36px;
+      width: 100%;
+      max-width: 420px;
+      animation: float 5s ease-in-out infinite;
+    }
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+    .hero-card-icon {
+      width: 56px; height: 56px;
+      background: var(--verde);
+      border-radius: var(--raio);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 20px;
+      font-size: 1.6rem;
+    }
+    .hero-card-titulo { color: #fff; font-size: 1.15rem; margin-bottom: 8px; }
+    .hero-card-desc { color: rgba(255,255,255,0.65); font-size: 0.9rem; line-height: 1.6; margin-bottom: 24px; }
+    .checklist-preview {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .checklist-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 0.88rem;
+    }
+    .checklist-item.ok { background: rgba(78,204,163,0.12); color: rgba(255,255,255,0.9); }
+    .checklist-item.atencao { background: rgba(255,193,7,0.12); color: rgba(255,255,255,0.85); }
+    .checklist-item-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    .checklist-item.ok .checklist-item-dot { background: #4ecca3; }
+    .checklist-item.atencao .checklist-item-dot { background: #ffc107; }
+
+    /* =============================================
+       SEÇÃO PROBLEMA
+    ============================================= */
+    .problema { background: var(--grafite); }
+    .problema .section-tag { color: #4ecca3; background: rgba(78,204,163,0.1); border-color: rgba(78,204,163,0.2); }
+    .problema .section-titulo { color: #fff; }
+    .problema .section-subtitulo { color: rgba(255,255,255,0.65); }
+    .problema-intro { max-width: 720px; margin-bottom: 56px; }
+
+    /* Gráfico de custos */
+    .custo-grafico {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--raio-grande);
+      padding: 40px;
+      margin-bottom: 48px;
+    }
+    .custo-grafico-titulo {
+      color: #fff;
+      font-family: var(--fonte-titulo);
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .custo-grafico-sub {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.85rem;
+      margin-bottom: 36px;
+    }
+    .custo-barras {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .custo-linha { display: flex; align-items: center; gap: 14px; }
+    .custo-label { color: rgba(255,255,255,0.75); font-size: 0.85rem; width: 130px; flex-shrink: 0; font-family: var(--fonte-titulo); }
+    .custo-barra-wrap { flex: 1; height: 32px; background: rgba(255,255,255,0.06); border-radius: 100px; overflow: hidden; position: relative; }
+    .custo-barra {
+      height: 100%;
+      border-radius: 100px;
+      display: flex; align-items: center; justify-content: flex-end;
+      padding-right: 12px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #fff;
+      width: 0;
+      transition: width 1.5s cubic-bezier(0.4,0,0.2,1);
+    }
+    .custo-barra.aluguel { background: linear-gradient(90deg, #0B5D5D, #4ecca3); }
+    .custo-barra.copasa { background: linear-gradient(90deg, #1a6b8a, #4ecce0); }
+    .custo-barra.cemig { background: linear-gradient(90deg, #7b5ea7, #b39ddb); }
+    .custo-barra.iptu { background: linear-gradient(90deg, #b04a2e, #e57373); }
+    .custo-barra.lixo { background: linear-gradient(90deg, #7a7a2e, #dce775); }
+    .custo-total-linha {
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .custo-total-label { color: rgba(255,255,255,0.6); font-size: 0.85rem; }
+    .custo-total-valor {
+      font-family: var(--fonte-titulo);
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: #4ecca3;
+    }
+
+    /* Carrossel situações */
+    .carrossel-wrapper { position: relative; overflow: hidden; }
+    .carrossel-titulo { color: rgba(255,255,255,0.5); font-size: 0.75rem; font-family: var(--fonte-titulo); font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 20px; }
+    .carrossel-track {
+      display: flex;
+      gap: 20px;
+      transition: transform 0.5s cubic-bezier(0.4,0,0.2,1);
+    }
+    .carrossel-card {
+      min-width: 300px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--raio);
+      padding: 28px;
+      flex-shrink: 0;
+    }
+    .carrossel-card-emoji { font-size: 2rem; margin-bottom: 14px; }
+    .carrossel-card-titulo { color: #fff; font-size: 0.95rem; margin-bottom: 8px; }
+    .carrossel-card-desc { color: rgba(255,255,255,0.6); font-size: 0.88rem; line-height: 1.6; }
+    .carrossel-nav { display: flex; gap: 10px; margin-top: 24px; }
+    .carrossel-btn {
+      width: 40px; height: 40px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      color: #fff;
+      font-size: 1rem;
+      transition: all 0.2s;
+    }
+    .carrossel-btn:hover { background: var(--verde); border-color: var(--verde); }
+    .carrossel-dots { display: flex; gap: 6px; align-items: center; margin-left: 8px; }
+    .carrossel-dot { width: 6px; height: 6px; background: rgba(255,255,255,0.2); border-radius: 50%; transition: all 0.3s; cursor: pointer; }
+    .carrossel-dot.active { background: #4ecca3; width: 20px; border-radius: 3px; }
+    .nota-reclame {
+      margin-top: 24px;
+      padding: 16px 20px;
+      background: rgba(255,255,255,0.04);
+      border-left: 3px solid rgba(255,255,255,0.15);
+      border-radius: 0 var(--raio) var(--raio) 0;
+      color: rgba(255,255,255,0.4);
+      font-size: 0.8rem;
+      font-style: italic;
+    }
+
+    /* =============================================
+       SEÇÃO O QUE É A VIA+
+    ============================================= */
+    .oque { background: var(--branco); }
+    .oque-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .oque-visual {
+      position: relative;
+    }
+    .oque-img-wrap {
+      border-radius: var(--raio-grande);
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--verde) 0%, var(--verde-escuro) 100%);
+      aspect-ratio: 4/5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .oque-img-placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      color: rgba(255,255,255,0.7);
+      font-size: 0.85rem;
+      font-family: var(--fonte-titulo);
+      text-align: center;
+      padding: 20px;
+    }
+    .oque-img-placeholder span { font-size: 4rem; }
+    .oque-badge-float {
+      position: absolute;
+      bottom: -20px; right: -20px;
+      background: #fff;
+      border-radius: var(--raio);
+      padding: 16px 20px;
+      box-shadow: var(--sombra-forte);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .oque-badge-numero { font-family: var(--fonte-titulo); font-size: 2rem; font-weight: 800; color: var(--verde); line-height: 1; }
+    .oque-badge-texto { font-size: 0.8rem; color: var(--cinza); line-height: 1.4; }
+    .posicionamento-box {
+      background: linear-gradient(135deg, var(--verde-bg), rgba(11,93,93,0.05));
+      border: 1px solid rgba(11,93,93,0.15);
+      border-left: 4px solid var(--verde);
+      border-radius: 0 var(--raio) var(--raio) 0;
+      padding: 28px;
+      margin-top: 32px;
+    }
+    .posicionamento-box p {
+      color: var(--grafite);
+      font-size: 0.92rem;
+      line-height: 1.8;
+    }
+    .posicionamento-box strong { color: var(--verde); }
+
+    /* =============================================
+       SERVIÇOS
+    ============================================= */
+    .servicos { background: var(--branco-puro); }
+    .servicos-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+    .servico-card {
+      background: #fff;
+      border: 1px solid #e8e8e8;
+      border-radius: var(--raio-grande);
+      padding: 40px;
+      transition: all 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+    .servico-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--verde), #4ecca3);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.4s;
+    }
+    .servico-card:hover::before { transform: scaleX(1); }
+    .servico-card:hover { transform: translateY(-4px); box-shadow: var(--sombra-forte); }
+    .servico-numero {
+      font-family: var(--fonte-titulo);
+      font-size: 3rem;
+      font-weight: 800;
+      color: rgba(11,93,93,0.08);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .servico-icon {
+      width: 52px; height: 52px;
+      background: var(--verde-bg);
+      border: 1px solid rgba(11,93,93,0.15);
+      border-radius: var(--raio);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+    }
+    .servico-titulo { color: var(--grafite); margin-bottom: 10px; font-size: 1.2rem; }
+    .servico-desc { color: var(--cinza); font-size: 0.92rem; margin-bottom: 24px; line-height: 1.7; }
+    .servico-lista { display: flex; flex-direction: column; gap: 8px; }
+    .servico-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.88rem;
+      color: var(--grafite-medio);
+    }
+    .servico-item-check { color: var(--verde); font-weight: 700; flex-shrink: 0; margin-top: 2px; }
+    .servico-aviso {
+      margin-top: 24px;
+      padding: 12px 16px;
+      background: rgba(11,93,93,0.06);
+      border-radius: 8px;
+      font-size: 0.8rem;
+      color: var(--verde-claro);
+      font-style: italic;
+      line-height: 1.5;
+    }
+
+    /* Checklist exemplo */
+    .checklist-exemplo {
+      background: var(--grafite);
+      border-radius: var(--raio);
+      padding: 24px;
+      margin-top: 28px;
+    }
+    .checklist-exemplo-titulo {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.72rem;
+      font-family: var(--fonte-titulo);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .checklist-exemplo-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      font-size: 0.88rem;
+    }
+    .checklist-exemplo-item:last-child { border-bottom: none; }
+    .check-ok { color: #4ecca3; font-weight: 700; }
+    .check-av { color: #ffc107; font-weight: 700; }
+    .check-texto-ok { color: rgba(255,255,255,0.85); }
+    .check-texto-av { color: rgba(255,255,255,0.7); }
+
+    /* =============================================
+       COMO FUNCIONA
+    ============================================= */
+    .como { background: var(--branco); }
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      position: relative;
+    }
+    .steps-grid::before {
+      content: '';
+      position: absolute;
+      top: 32px; left: 10%; right: 10%;
+      height: 2px;
+      background: linear-gradient(90deg, var(--verde), #4ecca3, var(--verde));
+      opacity: 0.2;
+    }
+    .step-card {
+      background: #fff;
+      border: 1px solid #ececec;
+      border-radius: var(--raio);
+      padding: 32px 24px;
+      text-align: center;
+      position: relative;
+      transition: all 0.3s;
+    }
+    .step-card:hover { transform: translateY(-4px); box-shadow: var(--sombra); }
+    .step-numero {
+      width: 56px; height: 56px;
+      background: linear-gradient(135deg, var(--verde), #145A5A);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--fonte-titulo);
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: #fff;
+      margin: 0 auto 20px;
+      position: relative;
+      z-index: 1;
+    }
+    .step-titulo { color: var(--grafite); font-size: 1rem; margin-bottom: 10px; }
+    .step-desc { color: var(--cinza); font-size: 0.88rem; line-height: 1.65; }
+
+    /* =============================================
+       PROBLEMAS QUE EVITAMOS
+    ============================================= */
+    .problemas { background: var(--grafite); }
+    .problemas .section-tag { color: #4ecca3; background: rgba(78,204,163,0.1); border-color: rgba(78,204,163,0.2); }
+    .problemas .section-titulo { color: #fff; }
+    .problemas .section-subtitulo { color: rgba(255,255,255,0.6); }
+    .problemas-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .problema-item {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--raio);
+      padding: 28px;
+      transition: all 0.3s;
+    }
+    .problema-item:hover { background: rgba(255,255,255,0.08); transform: translateY(-3px); }
+    .problema-emoji { font-size: 1.8rem; margin-bottom: 14px; }
+    .problema-titulo { color: #fff; font-size: 0.95rem; margin-bottom: 8px; }
+    .problema-desc { color: rgba(255,255,255,0.55); font-size: 0.85rem; line-height: 1.6; }
+
+    /* =============================================
+       ANTES X DEPOIS
+    ============================================= */
+    .comparativo { background: var(--branco); }
+    .comparativo-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      border-radius: var(--raio-grande);
+      overflow: hidden;
+      box-shadow: var(--sombra);
+    }
+    .comparativo-table th {
+      padding: 20px 28px;
+      font-family: var(--fonte-titulo);
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+    .th-sem {
+      background: #f5f5f5;
+      color: var(--cinza);
+      width: 50%;
+    }
+    .th-com {
+      background: var(--verde);
+      color: #fff;
+      width: 50%;
+    }
+    .comparativo-table td {
+      padding: 18px 28px;
+      font-size: 0.92rem;
+      border-bottom: 1px solid #f0f0f0;
+      vertical-align: top;
+    }
+    .td-sem {
+      background: #fafafa;
+      color: var(--cinza);
+    }
+    .td-sem::before { content: '✗ '; color: #ccc; }
+    .td-com {
+      background: #fff;
+      color: var(--grafite);
+    }
+    .td-com::before { content: '✓ '; color: var(--verde); font-weight: 700; }
+    .comparativo-table tr:last-child td { border-bottom: none; }
+
+    /* =============================================
+       NÚMEROS / AUTORIDADE
+    ============================================= */
+    .numeros {
+      background: linear-gradient(135deg, var(--verde) 0%, var(--verde-escuro) 100%);
+    }
+    .numeros-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+    .numero-card {
+      text-align: center;
+      padding: 40px 20px;
+      border-right: 1px solid rgba(255,255,255,0.1);
+    }
+    .numero-card:last-child { border-right: none; }
+    .numero-valor {
+      font-family: var(--fonte-titulo);
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .numero-valor span { color: #4ecca3; }
+    .numero-label {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.92rem;
+      line-height: 1.5;
+    }
+
+    /* =============================================
+       QUEM SOMOS
+    ============================================= */
+    .quem { background: var(--branco); }
+    .quem-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .quem-texto p { color: var(--cinza); margin-bottom: 20px; }
+    .quem-texto strong { color: var(--verde); }
+    .quem-pessoas {
+      display: flex;
+      gap: 16px;
+      margin-top: 32px;
+    }
+    .quem-pessoa {
+      flex: 1;
+      background: #fff;
+      border: 1px solid #ececec;
+      border-radius: var(--raio);
+      padding: 24px;
+      text-align: center;
+    }
+    .quem-avatar {
+      width: 72px; height: 72px;
+      background: linear-gradient(135deg, var(--verde), var(--verde-escuro));
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.8rem;
+      margin: 0 auto 14px;
+    }
+    .quem-nome { font-family: var(--fonte-titulo); font-size: 0.95rem; font-weight: 700; color: var(--grafite); margin-bottom: 4px; }
+    .quem-anos { color: var(--verde); font-size: 0.82rem; font-weight: 600; margin-bottom: 8px; }
+    .quem-cargo { color: var(--cinza); font-size: 0.82rem; }
+    .quem-visual-wrap {
+      background: linear-gradient(135deg, #f8fafa, #e8f0f0);
+      border-radius: var(--raio-grande);
+      padding: 48px;
+      text-align: center;
+    }
+    .quem-visual-icon { font-size: 5rem; margin-bottom: 20px; }
+    .quem-visual-titulo { font-family: var(--fonte-titulo); color: var(--grafite); margin-bottom: 8px; }
+    .quem-visual-desc { color: var(--cinza); font-size: 0.9rem; line-height: 1.7; }
+
+    /* =============================================
+       DEPOIMENTOS
+    ============================================= */
+    .depoimentos { background: var(--branco-puro); }
+    .depoimentos-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .depoimento-card {
+      background: #fff;
+      border: 1px solid #ececec;
+      border-radius: var(--raio);
+      padding: 32px;
+      transition: all 0.3s;
+    }
+    .depoimento-card:hover { transform: translateY(-4px); box-shadow: var(--sombra); }
+    .depoimento-aspas { font-size: 3rem; color: var(--verde); line-height: 0.8; margin-bottom: 16px; opacity: 0.4; font-family: serif; }
+    .depoimento-texto { color: var(--cinza); font-size: 0.92rem; line-height: 1.7; margin-bottom: 24px; font-style: italic; }
+    .depoimento-autor { display: flex; align-items: center; gap: 12px; }
+    .depoimento-avatar {
+      width: 44px; height: 44px;
+      background: var(--verde-bg);
+      border: 2px solid rgba(11,93,93,0.2);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem;
+    }
+    .depoimento-nome { font-family: var(--fonte-titulo); font-size: 0.88rem; font-weight: 700; color: var(--grafite); }
+    .depoimento-cidade { color: var(--cinza-claro); font-size: 0.78rem; }
+    .depoimento-nota { display: flex; gap: 2px; margin-top: 4px; color: #f59e0b; font-size: 0.82rem; }
+    .depoimentos-aviso {
+      text-align: center;
+      margin-top: 24px;
+      color: var(--cinza-claro);
+      font-size: 0.78rem;
+      font-style: italic;
+    }
+
+    /* =============================================
+       FAQ
+    ============================================= */
+    .faq { background: var(--branco); }
+    .faq-lista { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+    .faq-item {
+      background: #fff;
+      border: 1px solid #e8e8e8;
+      border-radius: var(--raio);
+      overflow: hidden;
+      transition: all 0.2s;
+    }
+    .faq-item.open { border-color: rgba(11,93,93,0.25); }
+    .faq-pergunta {
+      padding: 22px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      gap: 16px;
+      user-select: none;
+    }
+    .faq-pergunta-texto { font-family: var(--fonte-titulo); font-size: 0.95rem; font-weight: 600; color: var(--grafite); }
+    .faq-icone {
+      width: 28px; height: 28px;
+      background: var(--verde-bg);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      color: var(--verde);
+      font-size: 1.1rem;
+      font-weight: 700;
+      transition: transform 0.3s;
+    }
+    .faq-item.open .faq-icone { transform: rotate(45deg); background: var(--verde); color: #fff; }
+    .faq-resposta {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+    }
+    .faq-resposta-inner {
+      padding: 0 24px 22px;
+      color: var(--cinza);
+      font-size: 0.92rem;
+      line-height: 1.75;
+      border-top: 1px solid #f0f0f0;
+      padding-top: 18px;
+    }
+
+    /* =============================================
+       CTA FINAL
+    ============================================= */
+    .cta-final {
+      background: linear-gradient(135deg, #0a2e2e 0%, #0B5D5D 60%, #145A5A 100%);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-final::before {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 800px; height: 800px;
+      background: radial-gradient(circle, rgba(78,204,163,0.06) 0%, transparent 60%);
+      border-radius: 50%;
+    }
+    .cta-final-inner { position: relative; z-index: 1; }
+    .cta-final h2 { color: #fff; margin-bottom: 16px; max-width: 640px; margin-left: auto; margin-right: auto; }
+    .cta-final p { color: rgba(255,255,255,0.7); margin-bottom: 40px; font-size: 1.05rem; }
+    .cta-final-btns { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+    .cta-localizacao {
+      margin-top: 28px;
+      color: rgba(255,255,255,0.5);
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    /* =============================================
+       RODAPÉ
+    ============================================= */
+    footer {
+      background: #0a1a1a;
+      padding: 48px 0 24px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 40px;
+    }
+    .footer-logo img { height: 36px; margin-bottom: 14px; filter: brightness(0) invert(0.9); }
+    .footer-logo p { color: rgba(255,255,255,0.45); font-size: 0.85rem; line-height: 1.7; }
+    .footer-coluna-titulo {
+      font-family: var(--fonte-titulo);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+      margin-bottom: 16px;
+    }
+    .footer-links { display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a { color: rgba(255,255,255,0.55); font-size: 0.88rem; transition: color 0.2s; }
+    .footer-links a:hover { color: #4ecca3; }
+    .footer-contatos { display: flex; flex-direction: column; gap: 10px; }
+    .footer-contato { display: flex; align-items: center; gap: 8px; color: rgba(255,255,255,0.55); font-size: 0.88rem; }
+    .footer-contato span { font-size: 1rem; }
+    .footer-divider { border: none; border-top: 1px solid rgba(255,255,255,0.07); margin-bottom: 20px; }
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .footer-copy { color: rgba(255,255,255,0.25); font-size: 0.78rem; }
+    .footer-lgpd { color: rgba(255,255,255,0.2); font-size: 0.75rem; text-align: right; max-width: 400px; line-height: 1.5; }
+    .footer-dev { color: rgba(255,255,255,0.2); font-size: 0.72rem; }
+    .footer-dev a { color: rgba(78,204,163,0.5); }
+    .footer-social { display: flex; gap: 10px; }
+    .social-btn {
+      width: 36px; height: 36px;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,0.5);
+      font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+    .social-btn:hover { background: var(--verde); border-color: var(--verde); color: #fff; }
+
+    /* =============================================
+       WHATSAPP FLUTUANTE
+    ============================================= */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 28px; right: 28px;
+      width: 58px; height: 58px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.45);
+      z-index: 9999;
+      transition: all 0.3s;
+      animation: wpp-pulse 3s ease-in-out infinite;
+    }
+    .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(37,211,102,0.55); }
+    @keyframes wpp-pulse {
+      0%,100%{box-shadow:0 4px 20px rgba(37,211,102,0.45)}
+      50%{box-shadow:0 4px 32px rgba(37,211,102,0.7)}
+    }
+
+    /* =============================================
+       ANIMAÇÕES DE ENTRADA
+    ============================================= */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .fade-in-delay-1 { transition-delay: 0.1s; }
+    .fade-in-delay-2 { transition-delay: 0.2s; }
+    .fade-in-delay-3 { transition-delay: 0.3s; }
+
+    /* =============================================
+       RESPONSIVO
+    ============================================= */
+    @media (max-width: 1024px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+      .hero-visual { justify-content: center; }
+      .hero-card-flutuante { max-width: 100%; }
+      .oque-grid { grid-template-columns: 1fr; }
+      .oque-visual { order: -1; }
+      .oque-badge-float { display: none; }
+      .quem-grid { grid-template-columns: 1fr; }
+      .steps-grid { grid-template-columns: repeat(2, 1fr); }
+      .steps-grid::before { display: none; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .section { padding: 60px 0; }
+      .nav-links, .nav-cta .btn-outline { display: none; }
+      .hamburger { display: block; }
+      .hero-grid { padding: 40px 0; }
+      .hero-btns { flex-direction: column; }
+      .hero-btns .btn { justify-content: center; }
+      .servicos-grid { grid-template-columns: 1fr; }
+      .problemas-grid { grid-template-columns: 1fr 1fr; }
+      .numeros-grid { grid-template-columns: 1fr; }
+      .numero-card { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); padding: 28px 20px; }
+      .numero-card:last-child { border-bottom: none; }
+      .depoimentos-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+      .footer-lgpd { text-align: center; }
+      .quem-pessoas { flex-direction: column; }
+      .comparativo-table td, .comparativo-table th { padding: 14px 16px; font-size: 0.85rem; }
+      .custo-label { width: 90px; font-size: 0.78rem; }
+      .carrossel-card { min-width: 260px; }
+    }
+
+    @media (max-width: 480px) {
+      .problemas-grid { grid-template-columns: 1fr; }
+      .steps-grid { grid-template-columns: 1fr; }
+      .hero-titulo { font-size: 1.9rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =============================================
+       NAVBAR
+  ============================================= -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="navbar-inner">
+        <div class="logo-wrap">
+          <img src="logo-via-mais.png" alt="VIA+ Entrega Inteligente de Imóveis" width="120" height="40" loading="eager">
+        </div>
+        <ul class="nav-links">
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#quem-somos">Quem somos</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="#servicos" class="btn btn-outline" style="padding:10px 20px;font-size:0.85rem;">Ver serviços</a>
+          <a href="https://wa.me/5538984079731?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20orienta%C3%A7%C3%A3o%20pr%C3%A9-entrega%20de%20im%C3%B3vel%20da%20VIA%2B." class="btn btn-primary" style="padding:10px 20px;font-size:0.85rem;" target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Menu mobile -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#servicos">Serviços</a>
+    <a href="#como-funciona">Como funciona</a>
+    <a href="#quem-somos">Quem somos</a>
+    <a href="#faq">FAQ</a>
+    <a href="https://wa.me/5538984079731?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20orienta%C3%A7%C3%A3o%20pr%C3%A9-entrega%20de%20im%C3%B3vel%20da%20VIA%2B." target="_blank" rel="noopener noreferrer" style="color: var(--verde);">📲 Falar no WhatsApp</a>
+  </div>
+
+  <main>
+
+    <!-- =============================================
+         HERO
+    ============================================= -->
+    <section class="hero" id="inicio">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-conteudo">
+            <div class="hero-badge">
+              <span></span>
+              Montes Claros/MG e região
+            </div>
+            <h1 class="hero-titulo">
+              Prepare seu imóvel<br>do jeito certo.<br>
+              <em>Entregue sem dor de cabeça.</em>
+            </h1>
+            <p class="hero-subtitulo">
+              A VIA+ orienta você antes da vistoria oficial de saída — para que você saiba exatamente o que precisa fazer, como fazer e o que observar no seu laudo.
+            </p>
+            <div class="hero-beneficios">
+              <div class="hero-beneficio">
+                <div class="hero-beneficio-icon">📋</div>
+                Entenda o seu laudo de vistoria
+              </div>
+              <div class="hero-beneficio">
+                <div class="hero-beneficio-icon">✅</div>
+                Saiba o que precisa ser feito antes da entrega
+              </div>
+              <div class="hero-beneficio">
+                <div class="hero-beneficio-icon">🏠</div>
+                Entregue com segurança e tranquilidade
+              </div>
+            </div>
+            <div class="hero-btns">
+              <a href="https://wa.me/5538984079731?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20orienta%C3%A7%C3%A3o%20pr%C3%A9-entrega%20de%20im%C3%B3vel%20da%20VIA%2B." class="btn btn-branco" target="_blank" rel="noopener noreferrer">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Falar com especialista
+              </a>
+              <a href="#como-funciona" class="btn btn-outline" style="color:rgba(255,255,255,0.8);border-color:rgba(255,255,255,0.3);">
+                Como funciona →
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-card-flutuante">
+              <div class="hero-card-icon">📋</div>
+              <h3 class="hero-card-titulo">Checklist VIA+</h3>
+              <p class="hero-card-desc">Exemplo do resumo orientativo que você recebe após o atendimento.</p>
+              <div class="checklist-preview">
+                <div class="checklist-item ok">
+                  <div class="checklist-item-dot"></div>
+                  Pintura geral conferida
+                </div>
+                <div class="checklist-item atencao">
+                  <div class="checklist-item-dot"></div>
+                  Ajustar sifão da cozinha
+                </div>
+                <div class="checklist-item ok">
+                  <div class="checklist-item-dot"></div>
+                  Limpeza geral dentro do padrão
+                </div>
+                <div class="checklist-item atencao">
+                  <div class="checklist-item-dot"></div>
+                  Revisar verniz das portas
+                </div>
+                <div class="checklist-item ok">
+                  <div class="checklist-item-dot"></div>
+                  Tomadas funcionando
+                </div>
+                <div class="checklist-item atencao">
+                  <div class="checklist-item-dot"></div>
+                  Conferir registro do banheiro
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         O PROBLEMA
+    ============================================= -->
+    <section class="problema section" id="problema">
+      <div class="container">
+        <div class="problema-intro fade-in">
+          <div class="section-tag">O que está em jogo</div>
+          <h2 class="section-titulo">A maioria das pessoas entrega o imóvel sem saber o que o laudo realmente diz.</h2>
+          <p class="section-subtitulo">Cada dia além do prazo, você paga muito mais do que imagina.</p>
+        </div>
+
+        <!-- Gráfico de custos -->
+        <div class="custo-grafico fade-in">
+          <p class="custo-grafico-titulo">Custo real de 5 dias de atraso na entrega do imóvel</p>
+          <p class="custo-grafico-sub">Baseado em imóvel com aluguel médio de R$1.200/mês em Montes Claros/MG</p>
+          <div class="custo-barras" id="custoBarras">
+            <div class="custo-linha">
+              <span class="custo-label">Aluguel</span>
+              <div class="custo-barra-wrap">
+                <div class="custo-barra aluguel" data-width="90" data-value="R$ 200">R$ 200</div>
+              </div>
+            </div>
+            <div class="custo-linha">
+              <span class="custo-label">COPASA</span>
+              <div class="custo-barra-wrap">
+                <div class="custo-barra copasa" data-width="30" data-value="R$ 18">R$ 18</div>
+              </div>
+            </div>
+            <div class="custo-linha">
+              <span class="custo-label">CEMIG</span>
+              <div class="custo-barra-wrap">
+                <div class="custo-barra cemig" data-width="45" data-value="R$ 35">R$ 35</div>
+              </div>
+            </div>
+            <div class="custo-linha">
+              <span class="custo-label">IPTU</span>
+              <div class="custo-barra-wrap">
+                <div class="custo-barra iptu" data-width="22" data-value="R$ 12">R$ 12</div>
+              </div>
+            </div>
+            <div class="custo-linha">
+              <span class="custo-label">Taxa de lixo</span>
+              <div class="custo-barra-wrap">
+                <div class="custo-barra lixo" data-width="14" data-value="R$ 6">R$ 6</div>
+              </div>
+            </div>
+          </div>
+          <div class="custo-total-linha">
+            <span class="custo-total-label">5 dias de atraso não é só atraso. É tudo isso somado:</span>
+            <span class="custo-total-valor">≈ R$ 271 em 5 dias</span>
+          </div>
+        </div>
+
+        <!-- Carrossel situações -->
+        <div style="margin-top: 48px;" class="fade-in">
+          <p class="carrossel-titulo">Situações que se repetem na entrega de imóveis</p>
+          <div class="carrossel-wrapper">
+            <div class="carrossel-track" id="carrosselTrack">
+              <div class="carrossel-card">
+                <div class="carrossel-card-emoji">🖌️</div>
+                <h4 class="carrossel-card-titulo">Pintura executada do jeito errado</h4>
+                <p class="carrossel-card-desc">O inquilino pintou o imóvel, mas não seguiu o padrão correto. Na vistoria, foi chamado para refazer — com dias extras de aluguel pagos durante o processo.</p>
+              </div>
+              <div class="carrossel-card">
+                <div class="carrossel-card-emoji">🚿</div>
+                <h4 class="carrossel-card-titulo">Vazamento não identificado no laudo</h4>
+                <p class="carrossel-card-desc">O laudo registrava um pequeno vazamento na entrada. O inquilino não leu com atenção. Na saída, o item foi apontado e gerou necessidade de reparo e nova vistoria.</p>
+              </div>
+              <div class="carrossel-card">
+                <div class="carrossel-card-emoji">🧹</div>
+                <h4 class="carrossel-card-titulo">Limpeza abaixo do padrão exigido</h4>
+                <p class="carrossel-card-desc">A limpeza foi feita, mas não no padrão esperado na devolução. Nova data de vistoria agendada. Mais dias de aluguel, água, luz e taxas acumulando.</p>
+              </div>
+              <div class="carrossel-card">
+                <div class="carrossel-card-emoji">📋</div>
+                <h4 class="carrossel-card-titulo">Laudo não conferido antes da entrega</h4>
+                <p class="carrossel-card-desc">O inquilino não releu o laudo de entrada antes de devolver. Na vistoria oficial, foram apontados itens que ele não lembrava — e não tinha como contestar.</p>
+              </div>
+              <div class="carrossel-card">
+                <div class="carrossel-card-emoji">⏳</div>
+                <h4 class="carrossel-card-titulo">Retrabalho que poderia ter sido evitado</h4>
+                <p class="carrossel-card-desc">Pequenos detalhes esquecidos obrigaram o inquilino a voltar ao imóvel depois da entrega. Atraso, custo extra e estresse — tudo evitável com uma orientação prévia.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carrossel-nav">
+            <button class="carrossel-btn" id="carrosselPrev" aria-label="Anterior">←</button>
+            <button class="carrossel-btn" id="carrosselNext" aria-label="Próximo">→</button>
+            <div class="carrossel-dots" id="carrosselDots"></div>
+          </div>
+          <p class="nota-reclame">Situações como essas são relatadas com frequência por inquilinos em todo o Brasil — e a maioria poderia ser evitada com uma orientação técnica prévia.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         O QUE É A VIA+
+    ============================================= -->
+    <section class="oque section" id="oque">
+      <div class="container">
+        <div class="oque-grid">
+          <div class="oque-visual fade-in">
+            <div class="oque-img-wrap">
+              <img src="orientacao-imovel-laudo.jpg" alt="Especialistas VIA+ analisando laudo de vistoria de imóvel" width="500" height="625" loading="lazy" onerror="this.parentNode.innerHTML='<div class=\'oque-img-placeholder\'><span>🏠</span><p>Atendimento presencial<br>Montes Claros/MG</p></div>'">
+            </div>
+            <div class="oque-badge-float">
+              <div class="oque-badge-numero">20+</div>
+              <div class="oque-badge-texto">anos de experiência<br>combinada</div>
+            </div>
+          </div>
+
+          <div class="fade-in fade-in-delay-1">
+            <div class="section-tag">Sobre a VIA+</div>
+            <h2 class="section-titulo">Orientação técnica e preparação inteligente para a entrega do seu imóvel.</h2>
+            <p style="color:var(--cinza);margin-bottom:16px;">A VIA+ não realiza vistoria oficial e não substitui a imobiliária. Nosso trabalho é outro — e é o que estava faltando no mercado.</p>
+            <p style="color:var(--cinza);margin-bottom:24px;">Analisamos o laudo da sua vistoria de entrada com você, mostramos os pontos que normalmente precisam de atenção, e te orientamos sobre o que deve ser feito antes da entrega oficial. Com linguagem clara, sem complicar, sem criar conflito com ninguém.</p>
+
+            <div class="posicionamento-box">
+              <p>
+                Não somos vistoria.<br>
+                Não executamos reformas — <strong>mas indicamos parceiros de confiança quando necessário.</strong><br>
+                Não somos jurídicos.<br><br>
+                <strong>Somos orientação e preparação inteligente para você entregar seu imóvel do jeito certo.</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         SERVIÇOS
+    ============================================= -->
+    <section class="servicos section" id="servicos">
+      <div class="container">
+        <div class="section-tag">Nossos serviços</div>
+        <h2 class="section-titulo">Dois serviços. Uma missão: você preparado antes da vistoria.</h2>
+        <p class="section-subtitulo">Escolha o atendimento que faz mais sentido para o seu momento.</p>
+
+        <div class="servicos-grid">
+          <!-- Serviço 1 -->
+          <div class="servico-card fade-in">
+            <div class="servico-numero">01</div>
+            <div class="servico-icon">💬</div>
+            <h3 class="servico-titulo">Orientação Pré-Entrega</h3>
+            <p class="servico-desc">Atendimento consultivo presencial. Para quem quer entender o processo e saber exatamente o que fazer antes de agir.</p>
+            <div class="servico-lista">
+              <div class="servico-item"><span class="servico-item-check">✓</span>Como interpretar a vistoria assinada</div>
+              <div class="servico-item"><span class="servico-item-check">✓</span>Pontos que normalmente exigem atenção na devolução</div>
+              <div class="servico-item"><span class="servico-item-check">✓</span>Padrões de pintura, limpeza, hidráulica e conservação</div>
+              <div class="servico-item"><span class="servico-item-check">✓</span>O que observar e regularizar antes da entrega oficial</div>
+            </div>
+            <a href="https://wa.me/5538984079731?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Orienta%C3%A7%C3%A3o%20Pr%C3%A9-Entrega%20da%20VIA%2B." class="btn btn-primary" style="margin-top:28px;width:100%;justify-content:center;" target="_blank" rel="noopener noreferrer">Agendar orientação</a>
+          </div>
+
+          <!-- Serviço 2 -->
+          <div class="servico-card fade-in fade-in-delay-1">
+            <div class="servico-numero">02</div>
+            <div class="servico-icon">📋</div>
+            <h3 class="servico-titulo">Checklist Pré-Entrega VIA+</h3>
+            <p class="servico-desc">Serviço mais completo. Para quem quer um olhar técnico no próprio imóvel antes de entregar.</p>
+            <div class="servico-lista">
+              <div class="servico-item"><span class="servico-item-check">✓</span>Conferência visual orientativa no imóvel</div>
+              <div class="servico-item"><span class="servico-item-check">✓</span>Análise com base no laudo de vistoria de entrada</div>
+              <div class="servico-item"><span class="servico-item-check">✓</span>Identificação de ajustes, manutenções e itens pendentes</div>
+              <div class="servico-item"><span class="servico-item-check">✓</span>Entrega do resumo visual orientativo (Checklist VIA+)</div>
+            </div>
+            <div class="checklist-exemplo">
+              <p class="checklist-exemplo-titulo">Exemplo do checklist entregue</p>
+              <div class="checklist-exemplo-item"><span class="check-ok">✔</span><span class="check-texto-ok">Pintura geral conferida</span></div>
+              <div class="checklist-exemplo-item"><span class="check-av">⚠</span><span class="check-texto-av">Ajustar sifão da cozinha</span></div>
+              <div class="checklist-exemplo-item"><span class="check-ok">✔</span><span class="check-texto-ok">Limpeza geral dentro do padrão</span></div>
+              <div class="checklist-exemplo-item"><span class="check-av">⚠</span><span class="check-texto-av">Revisar verniz das portas</span></div>
+              <div class="checklist-exemplo-item"><span class="check-ok">✔</span><span class="check-texto-ok">Tomadas funcionando</span></div>
+              <div class="checklist-exemplo-item"><span class="check-av">⚠</span><span class="check-texto-av">Conferir registro do banheiro</span></div>
+            </div>
+            <div class="servico-aviso">⚠️ Este serviço tem caráter exclusivamente orientativo. A VIA+ não realiza vistoria oficial, não substitui imobiliárias e não emite laudos técnicos.</div>
+            <a href="https://wa.me/5538984079731?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Checklist%20Pr%C3%A9-Entrega%20VIA%2B." class="btn btn-primary" style="margin-top:20px;width:100%;justify-content:center;" target="_blank" rel="noopener noreferrer">Agendar checklist</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         COMO FUNCIONA
+    ============================================= -->
+    <section class="como section" id="como-funciona">
+      <div class="container">
+        <div class="section-tag">Passo a passo</div>
+        <h2 class="section-titulo">Simples, presencial e direto ao ponto.</h2>
+        <p class="section-subtitulo" style="margin-bottom:56px;">Do primeiro contato até você sair preparado — veja como funciona.</p>
+
+        <div class="steps-grid">
+          <div class="step-card fade-in">
+            <div class="step-numero">01</div>
+            <h3 class="step-titulo">Você entra em contato</h3>
+            <p class="step-desc">Manda mensagem no WhatsApp. A gente entende sua situação, explica como funciona e agenda o atendimento.</p>
+          </div>
+          <div class="step-card fade-in fade-in-delay-1">
+            <div class="step-numero">02</div>
+            <h3 class="step-titulo">Você traz o laudo</h3>
+            <p class="step-desc">Traga o laudo ou termo de vistoria de entrada do imóvel. É esse documento que analisamos com você durante o atendimento.</p>
+          </div>
+          <div class="step-card fade-in fade-in-delay-2">
+            <div class="step-numero">03</div>
+            <h3 class="step-titulo">Orientação clara e técnica</h3>
+            <p class="step-desc">Passamos por cada ponto do laudo — o que observar, o que regularizar, o padrão correto de pintura, limpeza e conservação.</p>
+          </div>
+          <div class="step-card fade-in fade-in-delay-3">
+            <div class="step-numero">04</div>
+            <h3 class="step-titulo">Você entrega preparado</h3>
+            <p class="step-desc">Chega na vistoria oficial sabendo o que foi feito, o que regularizou e o que esperar. Sem susto. Sem retrabalho. Sem atraso.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         PROBLEMAS QUE EVITAMOS
+    ============================================= -->
+    <section class="problemas section" id="problemas">
+      <div class="container">
+        <div class="section-tag">Prevenção</div>
+        <h2 class="section-titulo">Preparação evita esses problemas. Improvisar, não.</h2>
+        <p class="section-subtitulo">Quem chega despreparado na vistoria, descobre os problemas na hora errada.</p>
+
+        <div class="problemas-grid">
+          <div class="problema-item fade-in">
+            <div class="problema-emoji">🔄</div>
+            <h4 class="problema-titulo">Retrabalho de última hora</h4>
+            <p class="problema-desc">Fazer e refazer o que poderia ter sido resolvido certo desde o início — com custo extra de tempo e dinheiro.</p>
+          </div>
+          <div class="problema-item fade-in fade-in-delay-1">
+            <div class="problema-emoji">📅</div>
+            <h4 class="problema-titulo">Dias extras de aluguel e taxas</h4>
+            <p class="problema-desc">Cada dia de atraso acumula: aluguel proporcional, COPASA, CEMIG, IPTU e taxa de lixo — tudo junto, somando.</p>
+          </div>
+          <div class="problema-item fade-in fade-in-delay-2">
+            <div class="problema-emoji">🖌️</div>
+            <h4 class="problema-titulo">Pintura fora do padrão</h4>
+            <p class="problema-desc">O item mais comum na vistoria. Saber o padrão correto antes de executar evita refazer e pagar duas vezes.</p>
+          </div>
+          <div class="problema-item fade-in">
+            <div class="problema-emoji">🚿</div>
+            <h4 class="problema-titulo">Vazamentos não identificados</h4>
+            <p class="problema-desc">Itens registrados no laudo de entrada que passam despercebidos — e viram problema só na hora da entrega.</p>
+          </div>
+          <div class="problema-item fade-in fade-in-delay-1">
+            <div class="problema-emoji">🧹</div>
+            <h4 class="problema-titulo">Limpeza abaixo do padrão</h4>
+            <p class="problema-desc">A limpeza de devolução segue um padrão específico. Chegar sem saber isso pode gerar nova vistoria e mais atraso.</p>
+          </div>
+          <div class="problema-item fade-in fade-in-delay-2">
+            <div class="problema-emoji">😰</div>
+            <h4 class="problema-titulo">Surpresas na vistoria oficial</h4>
+            <p class="problema-desc">Descobrir na hora o que precisava ter sido feito — sem tempo, sem preparo e sem margem para corrigir.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         ANTES X COM A VIA+
+    ============================================= -->
+    <section class="comparativo section" id="comparativo">
+      <div class="container">
+        <div style="text-align:center;margin-bottom:48px;" class="fade-in">
+          <div class="section-tag">Comparativo</div>
+          <h2 class="section-titulo">A diferença de chegar preparado.</h2>
+        </div>
+        <div class="fade-in" style="overflow-x:auto;">
+          <table class="comparativo-table">
+            <thead>
+              <tr>
+                <th class="th-sem">Sem orientação prévia</th>
+                <th class="th-com">✓ Com a VIA+</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="td-sem">Descobre o que precisava fazer só na vistoria</td>
+                <td class="td-com">Já sabe com antecedência o que regularizar</td>
+              </tr>
+              <tr>
+                <td class="td-sem">Não sabe interpretar o laudo de entrada</td>
+                <td class="td-com">Entende cada item com clareza e linguagem simples</td>
+              </tr>
+              <tr>
+                <td class="td-sem">Faz a pintura do jeito errado — e refaz</td>
+                <td class="td-com">Sabe o padrão correto antes de executar</td>
+              </tr>
+              <tr>
+                <td class="td-sem">Esquece detalhes que geram retrabalho</td>
+                <td class="td-com">Confere tudo com um checklist técnico orientativo</td>
+              </tr>
+              <tr>
+                <td class="td-sem">Risco de atraso e dias extras de custo</td>
+                <td class="td-com">Entrega no prazo, sem surpresas</td>
+              </tr>
+              <tr>
+                <td class="td-sem">Sai com dúvida se fez tudo certo</td>
+                <td class="td-com">Sai com segurança e tranquilidade</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         NÚMEROS
+    ============================================= -->
+    <section class="numeros section">
+      <div class="container">
+        <div class="numeros-grid">
+          <div class="numero-card fade-in">
+            <div class="numero-valor"><span>20</span>+</div>
+            <p class="numero-label">anos de experiência combinada em vistorias imobiliárias</p>
+          </div>
+          <div class="numero-card fade-in fade-in-delay-1">
+            <div class="numero-valor"><span>2</span></div>
+            <p class="numero-label">especialistas ativos: Huberth (9 anos) + Rogério (11 anos)</p>
+          </div>
+          <div class="numero-card fade-in fade-in-delay-2">
+            <div class="numero-valor"><span>1</span></div>
+            <p class="numero-label">objetivo: você entregar seu imóvel preparado e sem dor de cabeça</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         QUEM SOMOS
+    ============================================= -->
+    <section class="quem section" id="quem-somos">
+      <div class="container">
+        <div class="quem-grid">
+          <div class="fade-in">
+            <div class="section-tag">Quem somos</div>
+            <h2 class="section-titulo">Dois especialistas do mercado imobiliário — a serviço da sua preparação.</h2>
+            <div class="quem-texto">
+              <p>A VIA+ nasceu de uma percepção que acumulamos ao longo de anos trabalhando com vistorias imobiliárias: a maioria das pessoas chega para entregar o imóvel sem saber exatamente o que o laudo diz, o que precisa ser feito e como fazer corretamente.</p>
+              <p>Trabalhamos diariamente do lado técnico das vistorias imobiliárias. Sabemos o que é observado, como é avaliado e o que mais gera problema na entrega. Agora colocamos esse conhecimento a serviço da sua preparação.</p>
+              <p><strong>Técnico sem complicar. Neutro sem se omitir. Direto no que importa.</strong></p>
+            </div>
+            <div class="quem-pessoas">
+              <div class="quem-pessoa">
+                <div class="quem-avatar">👷</div>
+                <p class="quem-nome">Huberth Paulo</p>
+                <p class="quem-anos">9 anos de experiência</p>
+                <p class="quem-cargo">Vistoriador profissional<br>Co-fundador VIA+</p>
+              </div>
+              <div class="quem-pessoa">
+                <div class="quem-avatar">👷</div>
+                <p class="quem-nome">Rogério Gomes</p>
+                <p class="quem-anos">11 anos de experiência</p>
+                <p class="quem-cargo">Vistoriador profissional<br>Co-fundador VIA+</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="quem-visual-wrap fade-in fade-in-delay-1">
+            <div class="quem-visual-icon">🤝</div>
+            <h3 class="quem-visual-titulo">Atuação neutra e profissional</h3>
+            <p class="quem-visual-desc">A VIA+ trabalha com base no que consta na vistoria assinada pelo cliente — sem confronto com imobiliárias, sem criar conflito entre as partes. Nossa proposta é orientar, preparar e facilitar o processo para todos os envolvidos.</p>
+            <br>
+            <p class="quem-visual-desc">📍 <strong>Montes Claros/MG e região</strong><br>Atendimento presencial, olho no olho, sem enrolação.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         DEPOIMENTOS
+    ============================================= -->
+    <section class="depoimentos section">
+      <div class="container">
+        <div style="text-align:center;margin-bottom:48px;" class="fade-in">
+          <div class="section-tag">Depoimentos</div>
+          <h2 class="section-titulo">O que nossos clientes dizem.</h2>
+        </div>
+        <div class="depoimentos-grid">
+          <div class="depoimento-card fade-in">
+            <div class="depoimento-aspas">"</div>
+            <p class="depoimento-texto">Eu não sabia que a pintura tinha um padrão específico para a entrega. A VIA+ me mostrou exatamente como deveria ser feita. Evitei ter que refazer tudo depois.</p>
+            <div class="depoimento-autor">
+              <div class="depoimento-avatar">👩</div>
+              <div>
+                <p class="depoimento-nome">Camila R.</p>
+                <p class="depoimento-cidade">Locatária · Montes Claros/MG</p>
+                <div class="depoimento-nota">★★★★★</div>
+              </div>
+            </div>
+          </div>
+          <div class="depoimento-card fade-in fade-in-delay-1">
+            <div class="depoimento-aspas">"</div>
+            <p class="depoimento-texto">Analisaram meu laudo comigo e identificaram um vazamento que eu nem tinha percebido. Resolvi antes da vistoria e evitei um problemão na entrega.</p>
+            <div class="depoimento-autor">
+              <div class="depoimento-avatar">👨</div>
+              <div>
+                <p class="depoimento-nome">Lucas M.</p>
+                <p class="depoimento-cidade">Inquilino · Montes Claros/MG</p>
+                <div class="depoimento-nota">★★★★★</div>
+              </div>
+            </div>
+          </div>
+          <div class="depoimento-card fade-in fade-in-delay-2">
+            <div class="depoimento-aspas">"</div>
+            <p class="depoimento-texto">Achei que estava tudo certo. Com o checklist da VIA+, vi três coisas que precisavam de atenção. Cheguei na vistoria oficial sem nenhum retrabalho depois.</p>
+            <div class="depoimento-autor">
+              <div class="depoimento-avatar">👩</div>
+              <div>
+                <p class="depoimento-nome">Fernanda T.</p>
+                <p class="depoimento-cidade">Locatária · Região de Montes Claros</p>
+                <div class="depoimento-nota">★★★★★</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="depoimentos-aviso">⚠️ Depoimentos ilustrativos — serão substituídos por avaliações reais assim que disponíveis.</p>
+      </div>
+    </section>
+
+    <!-- =============================================
+         FAQ
+    ============================================= -->
+    <section class="faq section" id="faq">
+      <div class="container">
+        <div style="text-align:center;margin-bottom:48px;" class="fade-in">
+          <div class="section-tag">Perguntas frequentes</div>
+          <h2 class="section-titulo">Ficou alguma dúvida?</h2>
+        </div>
+        <div class="faq-lista">
+          <div class="faq-item">
+            <div class="faq-pergunta">
+              <span class="faq-pergunta-texto">A VIA+ substitui a vistoria oficial?</span>
+              <span class="faq-icone">+</span>
+            </div>
+            <div class="faq-resposta">
+              <div class="faq-resposta-inner">Não. A vistoria oficial é responsabilidade da imobiliária ou empresa de vistoria. A VIA+ atua antes disso, ajudando você a se preparar com base no laudo que você já assinou.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-pergunta">
+              <span class="faq-pergunta-texto">O que eu preciso levar para o atendimento?</span>
+              <span class="faq-icone">+</span>
+            </div>
+            <div class="faq-resposta">
+              <div class="faq-resposta-inner">O laudo ou termo de vistoria de entrada do seu imóvel. É esse documento que analisamos com você durante o atendimento — ele é a base de toda a orientação.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-pergunta">
+              <span class="faq-pergunta-texto">O atendimento é presencial?</span>
+              <span class="faq-icone">+</span>
+            </div>
+            <div class="faq-resposta">
+              <div class="faq-resposta-inner">Sim. Trabalhamos de forma presencial em Montes Claros/MG e região, para analisar o laudo junto com você e orientar cada ponto com atenção e clareza.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-pergunta">
+              <span class="faq-pergunta-texto">Qual a diferença entre a Orientação e o Checklist?</span>
+              <span class="faq-icone">+</span>
+            </div>
+            <div class="faq-resposta">
+              <div class="faq-resposta-inner">A Orientação é um atendimento consultivo — você aprende a interpretar o laudo e entende o que precisa fazer. O Checklist vai além: fazemos uma conferência visual orientativa no próprio imóvel, identificando itens pendentes com base no laudo. No final você recebe um resumo visual por escrito.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-pergunta">
+              <span class="faq-pergunta-texto">Qual é o valor do serviço?</span>
+              <span class="faq-icone">+</span>
+            </div>
+            <div class="faq-resposta">
+              <div class="faq-resposta-inner">O valor depende do tipo de atendimento e do imóvel. Entre em contato pelo WhatsApp e a gente explica tudo sem compromisso — sem enrolação.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-pergunta">
+              <span class="faq-pergunta-texto">Vocês trabalham com imobiliárias?</span>
+              <span class="faq-icone">+</span>
+            </div>
+            <div class="faq-resposta">
+              <div class="faq-resposta-inner">Sim. Atuamos de forma neutra e profissional, sem confronto com nenhuma parte. Imobiliárias e proprietários também podem entrar em contato para entender como podemos colaborar.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         CTA FINAL
+    ============================================= -->
+    <section class="cta-final section">
+      <div class="container">
+        <div class="cta-final-inner fade-in">
+          <div class="section-tag" style="color:#4ecca3;background:rgba(78,204,163,0.1);border-color:rgba(78,204,163,0.2);">Pronto para começar?</div>
+          <h2>Não deixe para descobrir o que precisava fazer só na hora da vistoria.</h2>
+          <p>A preparação certa antes da entrega evita retrabalho, atraso e estresse. Fale com a VIA+ agora e chegue na vistoria oficial pronto.</p>
+          <div class="cta-final-btns">
+            <a href="https://wa.me/5538984079731?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20orienta%C3%A7%C3%A3o%20pr%C3%A9-entrega%20de%20im%C3%B3vel%20da%20VIA%2B." class="btn btn-branco" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Falar no WhatsApp agora
+            </a>
+            <a href="https://instagram.com/via.mais.entregainteligente" class="btn btn-outline" style="color:rgba(255,255,255,0.8);border-color:rgba(255,255,255,0.3);" target="_blank" rel="noopener noreferrer">
+              Seguir no Instagram
+            </a>
+          </div>
+          <p class="cta-localizacao">📍 Atendimento presencial em Montes Claros/MG e região</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============================================
+       RODAPÉ
+  ============================================= -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">
+            <img src="logo-via-mais.png" alt="VIA+" width="120" height="36" loading="lazy">
+            <p>Orientação técnica e preparação inteligente para entrega de imóveis em Montes Claros/MG e região.</p>
+          </div>
+          <div class="footer-social" style="margin-top:20px;">
+            <a href="https://instagram.com/via.mais.entregainteligente" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Instagram VIA+">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://wa.me/5538984079731" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp VIA+">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <p class="footer-coluna-titulo">Navegação</p>
+          <div class="footer-links">
+            <a href="#servicos">Serviços</a>
+            <a href="#como-funciona">Como funciona</a>
+            <a href="#comparativo">Antes × Com a VIA+</a>
+            <a href="#quem-somos">Quem somos</a>
+            <a href="#faq">Perguntas frequentes</a>
+          </div>
+        </div>
+
+        <div>
+          <p class="footer-coluna-titulo">Contato</p>
+          <div class="footer-contatos">
+            <div class="footer-contato"><span>📱</span>(38) 98407-9731</div>
+            <div class="footer-contato"><span>📸</span>@via.mais.entregainteligente</div>
+            <div class="footer-contato"><span>📍</span>Montes Claros/MG e região</div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="footer-divider">
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 VIA+ Entrega Inteligente de Imóveis. Todos os direitos reservados.</p>
+        <p class="footer-lgpd">A VIA+ não realiza vistorias oficiais nem substitui imobiliárias ou empresas de vistoria. Este site não coleta dados pessoais sem consentimento — em conformidade com a LGPD.</p>
+        <p class="footer-dev">Desenvolvido por <a href="#" target="_blank" rel="noopener noreferrer">M.AI.T.E Studio</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a href="https://wa.me/5538984079731?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20orienta%C3%A7%C3%A3o%20pr%C3%A9-entrega%20de%20im%C3%B3vel%20da%20VIA%2B."
+     class="whatsapp-float"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Falar no WhatsApp com a VIA+">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="#fff">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- =============================================
+       JAVASCRIPT
+  ============================================= -->
+  <script>
+    // Navbar scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    // Menu mobile
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+    });
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    });
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.querySelector('.faq-pergunta').addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.faq-resposta').style.maxHeight = '0';
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          const resposta = item.querySelector('.faq-resposta');
+          resposta.style.maxHeight = resposta.scrollHeight + 'px';
+        }
+      });
+    });
+
+    // Carrossel
+    const track = document.getElementById('carrosselTrack');
+    const cards = track.querySelectorAll('.carrossel-card');
+    const dotsContainer = document.getElementById('carrosselDots');
+    let currentIndex = 0;
+    let cardWidth = cards[0].offsetWidth + 20;
+
+    const createDots = () => {
+      dotsContainer.innerHTML = '';
+      cards.forEach((_, i) => {
+        const dot = document.createElement('div');
+        dot.className = `carrossel-dot${i === 0 ? ' active' : ''}`;
+        dot.addEventListener('click', () => goTo(i));
+        dotsContainer.appendChild(dot);
+      });
+    };
+
+    const updateDots = () => {
+      dotsContainer.querySelectorAll('.carrossel-dot').forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentIndex);
+      });
+    };
+
+    const goTo = (index) => {
+      cardWidth = cards[0].offsetWidth + 20;
+      const maxIndex = cards.length - Math.floor(track.parentElement.offsetWidth / cardWidth);
+      currentIndex = Math.max(0, Math.min(index, Math.max(0, maxIndex)));
+      track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+      updateDots();
+    };
+
+    document.getElementById('carrosselPrev').addEventListener('click', () => goTo(currentIndex - 1));
+    document.getElementById('carrosselNext').addEventListener('click', () => goTo(currentIndex + 1));
+
+    createDots();
+    window.addEventListener('resize', () => goTo(currentIndex));
+
+    // Auto-avançar carrossel
+    setInterval(() => {
+      const maxIndex = cards.length - Math.floor(track.parentElement.offsetWidth / (cards[0].offsetWidth + 20));
+      goTo(currentIndex >= Math.max(0, maxIndex) ? 0 : currentIndex + 1);
+    }, 4000);
+
+    // Animação das barras do gráfico
+    const animateBars = () => {
+      document.querySelectorAll('.custo-barra').forEach(bar => {
+        const targetWidth = bar.dataset.width;
+        setTimeout(() => { bar.style.width = targetWidth + '%'; }, 200);
+      });
+    };
+
+    // Intersection Observer — fade-in + gráfico
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          if (entry.target.id === 'custoBarras') animateBars();
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    const custoBarras = document.getElementById('custoBarras');
+    if (custoBarras) observer.observe(custoBarras);
+  </script>
+
+  <!-- Meta Pixel -->
+  <script>
+    window.addEventListener('load', () => {
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window,document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '[SEU_PIXEL_ID]');
+      fbq('track', 'PageView');
+    });
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>
+    window.addEventListener('load', () => {
+      (function(w,d,s,l,i){
+        w[l]=w[l]||[];
+        w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+        const f=d.getElementsByTagName(s)[0];
+        const j=d.createElement(s);
+        const dl=l!='dataLayer'?'&l='+l:'';
+        j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','[GTM-ID]');
+    });
+  </script>
+
+</body>
+</html>
